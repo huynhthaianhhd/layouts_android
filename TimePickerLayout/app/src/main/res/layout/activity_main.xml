@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TimePicker
+        android:theme="@style/timepicker"
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/>
+    <LinearLayout
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/tv_day"
+                android:text="@string/tomorrow_tue_oct_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginStart="150dp"
+                android:layout_toRightOf="@+id/tv_day"
+                android:id="@+id/img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/calendar" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tv_day"
+                android:id="@+id/tv1"
+                android:text="S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_day"
+                android:layout_toRightOf="@+id/tv1"
+                android:id="@+id/tv2"
+                android:text="M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_day"
+                android:layout_toRightOf="@+id/tv2"
+                android:id="@+id/tv3"
+                android:text="T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_day"
+                android:layout_toRightOf="@+id/tv3"
+                android:id="@+id/tv4"
+                android:text="W"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_day"
+                android:layout_toRightOf="@+id/tv4"
+                android:id="@+id/tv5"
+                android:text="T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_day"
+                android:layout_toRightOf="@+id/tv5"
+                android:id="@+id/tv6"
+                android:text="F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tv_day"
+                android:layout_toRightOf="@+id/tv6"
+                android:id="@+id/tv7"
+                android:text="S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:hint="Alarm Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tv1_end1"
+                android:text="Alarm Sound"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#03a9fc"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv1_end1"
+                android:id="@+id/tv1_end2"
+                android:text="Homecoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv1_end1"
+                android:id="@+id/sw1_end3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/border_bottom"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tv2_end1"
+                android:text="Vibration"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#03a9fc"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv2_end1"
+                android:id="@+id/tv2_end2"
+                android:text="Basic call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv2_end1"
+                android:id="@+id/sw2_end3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tv3_end1"
+                android:text="Snooze"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#03a9fc"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv3_end1"
+                android:id="@+id/tv3_end2"
+                android:text="5 minutes,3 times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv3_end1"
+                android:id="@+id/sw3_end3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#03a9fc"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+        <TextView
+            android:textColor="#03a9fc"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

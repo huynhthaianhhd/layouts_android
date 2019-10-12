@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/map"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/menu"
+                android:background="@drawable/menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <SearchView
+                android:id="@+id/search"
+                android:queryHint="Search here"
+                android:layout_toRightOf="@+id/menu"
+                android:layout_width="220dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/search"
+                android:id="@+id/voice"
+                android:background="@drawable/voice"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/voice"
+                android:id="@+id/btnP"
+                android:background="@drawable/p"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <Button
+            android:id="@+id/btn1"
+            android:background="@drawable/layer"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_below="@+id/btn1"
+            android:background="@drawable/here"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_below="@+id/btn2"
+            android:background="@drawable/go"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:layout_marginLeft="100dp"
+                android:id="@+id/btnend1"
+                android:background="@drawable/explore"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <Button
+                android:layout_marginLeft="100dp"
+                android:id="@+id/btnend2"
+                android:layout_toRightOf="@+id/btnend1"
+                android:background="@drawable/commute"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_marginLeft="90dp"
+                android:text="Explore"
+                android:layout_below="@+id/btnend1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:id="@+id/tv2"
+                android:layout_marginLeft="80dp"
+                android:text="Commute"
+                android:layout_toRightOf="@id/tv1"
+                android:layout_below="@+id/btnend2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

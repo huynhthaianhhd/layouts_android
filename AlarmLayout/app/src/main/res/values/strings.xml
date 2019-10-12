@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlarmLayout</string>
+    <string name="Ellipsis">⋮</string>
+    <string name="Add">+</string>
+    <string name="alarm">Alarm</string>
+
+</resources>
